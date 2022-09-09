@@ -1,0 +1,1 @@
+# chess-rcp-plugins
