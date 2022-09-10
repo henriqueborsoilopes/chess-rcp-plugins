@@ -7,10 +7,12 @@ public abstract class Piece
 {
 	private final Integer score;
 	private Square square;
-	private final Side side;
+	protected final Side side;
 	
-	public Piece(Integer score, Side side)
+	protected Piece(Square square, Side side, Integer score)
 	{
+		this.square = square;
+		this.square.setPiece(this);
 		this.score = score;
 		this.side = side;
 	}

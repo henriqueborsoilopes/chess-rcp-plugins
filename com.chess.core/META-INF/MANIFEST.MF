@@ -3,6 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: Core
 Bundle-SymbolicName: com.chess.core
 Bundle-Version: 1.0.0.qualifier
+Bundle-ClassPath: com.chess.core
 Bundle-Vendor: CHESS
 Automatic-Module-Name: com.chess.core
 Bundle-RequiredExecutionEnvironment: JavaSE-17
