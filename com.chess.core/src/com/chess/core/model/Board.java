@@ -5,9 +5,13 @@ public class Board
 	public static final Integer LENGTH = 8;
 	
 	private Square[][] squares;
+	private Army whiteArmy;
+	private Army blackArmy;
 	
-	public Board()
+	public Board(Army whiteArmy, Army blackArmy)
 	{
+		this.whiteArmy = whiteArmy;
+		this.blackArmy = blackArmy;
 		squares = new Square[LENGTH][LENGTH];
 		
 		for (int row = 0; row < LENGTH; row++) 
@@ -22,5 +26,10 @@ public class Board
 	public Square getSquare(Integer row, Integer col)
 	{
 		return squares[row][col];
+	}
+	
+	public Army getArmy(Side side)
+	{
+		return side == Side.WHITE ? whiteArmy : blackArmy;
 	}
 }
