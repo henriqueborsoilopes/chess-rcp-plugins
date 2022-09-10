@@ -5,7 +5,7 @@ import com.chess.core.model.Square;
 
 public class BlackPawn extends Piece
 {
-	protected BlackPawn(Square square, Side side) {
+	public BlackPawn(Square square, Side side) {
 		super(square, side, 1);
 	}
 	
