@@ -8,20 +8,22 @@ import org.eclipse.swt.layout.GridLayout;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Label;
 
-public class ChessBoardPArt {
-
+public class ChessBoardPart 
+{
 	private Label label;
-
+	
 	@PostConstruct
-	public void createComposite(Composite parent) {
+	public void createComposite(Composite parent) 
+	{
 		parent.setLayout(new GridLayout(1, false));
-
+		
 		label = new Label(parent, SWT.BORDER | SWT.BOLD);
-		label.setText("Hello!");
+		label.setText("Hello World!");
 	}
 
 	@Focus
-	public void setFocus() {
+	public void setFocus()
+	{
 		
 	}
 }
